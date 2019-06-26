@@ -1,0 +1,399 @@
+@!@!@STARTMSG 2262:0 @!@!@
+TLC2 Version 2.13 of 18 July 2018
+@!@!@ENDMSG 2262 @!@!@
+@!@!@STARTMSG 2187:0 @!@!@
+Running breadth-first search Model-Checking with seed -3744723917373847947 with 2 workers on 4 cores with 601MB heap and 1347MB offheap memory (Windows 10 10.0 amd64, Oracle Corporation 1.8.0_201 x86_64).
+@!@!@ENDMSG 2187 @!@!@
+@!@!@STARTMSG 2220:0 @!@!@
+Starting SANY...
+@!@!@ENDMSG 2220 @!@!@
+Parsing file C:\Users\Naxxo\OneDrive\Programming workspace\TLA+\CritSection\CritSectionCS.toolbox\Model_1\MC.tla
+Parsing file C:\Users\Naxxo\OneDrive\Programming workspace\TLA+\CritSection\CritSectionCS.toolbox\Model_1\CritSectionCS.tla
+Parsing file C:\Users\Naxxo\Downloads\TLAToolbox\toolbox\plugins\org.lamport.tlatools_1.0.0.201807180447\tla2sany\StandardModules\TLC.tla
+Parsing file C:\Users\Naxxo\Downloads\TLAToolbox\toolbox\plugins\org.lamport.tlatools_1.0.0.201807180447\tla2sany\StandardModules\Naturals.tla
+Parsing file C:\Users\Naxxo\Downloads\TLAToolbox\toolbox\plugins\org.lamport.tlatools_1.0.0.201807180447\tla2sany\StandardModules\Sequences.tla
+Parsing file C:\Users\Naxxo\Downloads\TLAToolbox\toolbox\plugins\org.lamport.tlatools_1.0.0.201807180447\tla2sany\StandardModules\FiniteSets.tla
+Semantic processing of module Naturals
+Semantic processing of module Sequences
+Semantic processing of module FiniteSets
+Semantic processing of module TLC
+Semantic processing of module CritSectionCS
+Semantic processing of module MC
+@!@!@STARTMSG 2219:0 @!@!@
+SANY finished.
+@!@!@ENDMSG 2219 @!@!@
+@!@!@STARTMSG 2185:0 @!@!@
+Starting... (2019-03-01 13:45:20)
+@!@!@ENDMSG 2185 @!@!@
+@!@!@STARTMSG 2189:0 @!@!@
+Computing initial states...
+@!@!@ENDMSG 2189 @!@!@
+@!@!@STARTMSG 2190:0 @!@!@
+Finished computing initial states: 1 distinct state generated.
+@!@!@ENDMSG 2190 @!@!@
+@!@!@STARTMSG 2114:1 @!@!@
+Deadlock reached.
+@!@!@ENDMSG 2114 @!@!@
+@!@!@STARTMSG 2121:1 @!@!@
+The behavior up to this point is:
+@!@!@ENDMSG 2121 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+1: <Initial predicate>
+/\ b = <<FALSE, FALSE>>
+/\ k = <<defaultInitValue, defaultInitValue>>
+/\ x = 0
+/\ y = 0
+/\ pc = <<"noncrit", "noncrit">>
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+2: <noncrit line 54, col 18 to line 57, col 46 of module CritSectionCS>
+/\ b = <<FALSE, FALSE>>
+/\ k = <<defaultInitValue, defaultInitValue>>
+/\ x = 0
+/\ y = 0
+/\ pc = <<"start", "noncrit">>
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+3: <start line 59, col 16 to line 62, col 41 of module CritSectionCS>
+/\ b = <<TRUE, FALSE>>
+/\ k = <<defaultInitValue, defaultInitValue>>
+/\ x = 0
+/\ y = 0
+/\ pc = <<"l1", "noncrit">>
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+4: <noncrit line 54, col 18 to line 57, col 46 of module CritSectionCS>
+/\ b = <<TRUE, FALSE>>
+/\ k = <<defaultInitValue, defaultInitValue>>
+/\ x = 0
+/\ y = 0
+/\ pc = <<"l1", "start">>
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+5: <l1 line 64, col 13 to line 67, col 38 of module CritSectionCS>
+/\ b = <<TRUE, FALSE>>
+/\ k = <<defaultInitValue, defaultInitValue>>
+/\ x = 1
+/\ y = 0
+/\ pc = <<"l2", "start">>
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+6: <l2 line 69, col 13 to line 73, col 41 of module CritSectionCS>
+/\ b = <<TRUE, FALSE>>
+/\ k = <<defaultInitValue, defaultInitValue>>
+/\ x = 1
+/\ y = 0
+/\ pc = <<"l3", "start">>
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+7: <l3 line 75, col 13 to line 78, col 38 of module CritSectionCS>
+/\ b = <<FALSE, FALSE>>
+/\ k = <<defaultInitValue, defaultInitValue>>
+/\ x = 1
+/\ y = 0
+/\ pc = <<"l4", "start">>
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+8: <start line 59, col 16 to line 62, col 41 of module CritSectionCS>
+/\ b = <<FALSE, TRUE>>
+/\ k = <<defaultInitValue, defaultInitValue>>
+/\ x = 1
+/\ y = 0
+/\ pc = <<"l4", "l1">>
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+9: <l1 line 64, col 13 to line 67, col 38 of module CritSectionCS>
+/\ b = <<FALSE, TRUE>>
+/\ k = <<defaultInitValue, defaultInitValue>>
+/\ x = 2
+/\ y = 0
+/\ pc = <<"l4", "l2">>
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+10: <l2 line 69, col 13 to line 73, col 41 of module CritSectionCS>
+/\ b = <<FALSE, TRUE>>
+/\ k = <<defaultInitValue, defaultInitValue>>
+/\ x = 2
+/\ y = 0
+/\ pc = <<"l4", "l3">>
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+11: <l3 line 75, col 13 to line 78, col 38 of module CritSectionCS>
+/\ b = <<FALSE, FALSE>>
+/\ k = <<defaultInitValue, defaultInitValue>>
+/\ x = 2
+/\ y = 0
+/\ pc = <<"l4", "l4">>
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2201:0 @!@!@
+The coverage statistics at 2019-03-01 13:45:23
+@!@!@ENDMSG 2201 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 100, col 29 to line 100, col 29 of module CritSectionCS: 0
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 100, col 32 to line 100, col 32 of module CritSectionCS: 0
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 105, col 27 to line 105, col 63 of module CritSectionCS: 0
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 106, col 27 to line 106, col 58 of module CritSectionCS: 0
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 107, col 27 to line 107, col 58 of module CritSectionCS: 0
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 108, col 27 to line 108, col 32 of module CritSectionCS: 0
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 109, col 29 to line 109, col 29 of module CritSectionCS: 0
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 109, col 32 to line 109, col 32 of module CritSectionCS: 0
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 109, col 35 to line 109, col 35 of module CritSectionCS: 0
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 113, col 27 to line 113, col 59 of module CritSectionCS: 0
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 114, col 27 to line 114, col 60 of module CritSectionCS: 0
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 115, col 29 to line 115, col 29 of module CritSectionCS: 0
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 115, col 32 to line 115, col 32 of module CritSectionCS: 0
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 115, col 35 to line 115, col 35 of module CritSectionCS: 0
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 115, col 38 to line 115, col 38 of module CritSectionCS: 0
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 119, col 17 to line 119, col 51 of module CritSectionCS: 0
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 120, col 30 to line 120, col 30 of module CritSectionCS: 0
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 120, col 33 to line 120, col 33 of module CritSectionCS: 0
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 120, col 36 to line 120, col 36 of module CritSectionCS: 0
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 120, col 39 to line 120, col 39 of module CritSectionCS: 0
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 124, col 18 to line 124, col 50 of module CritSectionCS: 0
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 125, col 31 to line 125, col 31 of module CritSectionCS: 0
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 125, col 34 to line 125, col 34 of module CritSectionCS: 0
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 125, col 37 to line 125, col 37 of module CritSectionCS: 0
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 125, col 40 to line 125, col 40 of module CritSectionCS: 0
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 128, col 17 to line 128, col 43 of module CritSectionCS: 0
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 129, col 17 to line 129, col 49 of module CritSectionCS: 0
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 130, col 30 to line 130, col 30 of module CritSectionCS: 0
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 130, col 33 to line 130, col 33 of module CritSectionCS: 0
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 130, col 36 to line 130, col 36 of module CritSectionCS: 0
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 133, col 17 to line 133, col 47 of module CritSectionCS: 0
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 134, col 17 to line 134, col 53 of module CritSectionCS: 0
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 135, col 30 to line 135, col 30 of module CritSectionCS: 0
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 135, col 33 to line 135, col 33 of module CritSectionCS: 0
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 135, col 36 to line 135, col 36 of module CritSectionCS: 0
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 56, col 21 to line 56, col 55 of module CritSectionCS: 12
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 57, col 34 to line 57, col 34 of module CritSectionCS: 12
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 57, col 37 to line 57, col 37 of module CritSectionCS: 12
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 57, col 40 to line 57, col 40 of module CritSectionCS: 12
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 57, col 43 to line 57, col 43 of module CritSectionCS: 12
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 60, col 19 to line 60, col 48 of module CritSectionCS: 12
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 61, col 19 to line 61, col 50 of module CritSectionCS: 12
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 62, col 32 to line 62, col 32 of module CritSectionCS: 12
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 62, col 35 to line 62, col 35 of module CritSectionCS: 12
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 62, col 38 to line 62, col 38 of module CritSectionCS: 12
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 65, col 16 to line 65, col 24 of module CritSectionCS: 12
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 66, col 16 to line 66, col 47 of module CritSectionCS: 12
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 67, col 29 to line 67, col 29 of module CritSectionCS: 12
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 67, col 32 to line 67, col 32 of module CritSectionCS: 12
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 67, col 35 to line 67, col 35 of module CritSectionCS: 12
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 71, col 27 to line 71, col 58 of module CritSectionCS: 18
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 72, col 27 to line 72, col 58 of module CritSectionCS: 0
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 73, col 29 to line 73, col 29 of module CritSectionCS: 18
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 73, col 32 to line 73, col 32 of module CritSectionCS: 18
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 73, col 35 to line 73, col 35 of module CritSectionCS: 18
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 73, col 38 to line 73, col 38 of module CritSectionCS: 18
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 76, col 16 to line 76, col 46 of module CritSectionCS: 18
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 77, col 16 to line 77, col 47 of module CritSectionCS: 18
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 78, col 29 to line 78, col 29 of module CritSectionCS: 18
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 78, col 32 to line 78, col 32 of module CritSectionCS: 18
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 78, col 35 to line 78, col 35 of module CritSectionCS: 18
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 82, col 16 to line 82, col 50 of module CritSectionCS: 0
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 83, col 29 to line 83, col 29 of module CritSectionCS: 0
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 83, col 32 to line 83, col 32 of module CritSectionCS: 0
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 83, col 35 to line 83, col 35 of module CritSectionCS: 0
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 83, col 38 to line 83, col 38 of module CritSectionCS: 0
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 86, col 16 to line 86, col 45 of module CritSectionCS: 0
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 87, col 16 to line 87, col 47 of module CritSectionCS: 0
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 88, col 29 to line 88, col 29 of module CritSectionCS: 0
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 88, col 32 to line 88, col 32 of module CritSectionCS: 0
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 88, col 35 to line 88, col 35 of module CritSectionCS: 0
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 92, col 27 to line 92, col 58 of module CritSectionCS: 0
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 93, col 27 to line 93, col 60 of module CritSectionCS: 0
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 94, col 29 to line 94, col 29 of module CritSectionCS: 0
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 94, col 32 to line 94, col 32 of module CritSectionCS: 0
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 94, col 35 to line 94, col 35 of module CritSectionCS: 0
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 94, col 38 to line 94, col 38 of module CritSectionCS: 0
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 97, col 16 to line 97, col 46 of module CritSectionCS: 0
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 98, col 16 to line 98, col 42 of module CritSectionCS: 0
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 99, col 16 to line 99, col 47 of module CritSectionCS: 0
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2202:0 @!@!@
+End of statistics.
+@!@!@ENDMSG 2202 @!@!@
+@!@!@STARTMSG 2200:0 @!@!@
+Progress(11) at 2019-03-01 13:45:23: 73 states generated (2,256 s/min), 45 distinct states found (1,391 ds/min), 0 states left on queue.
+@!@!@ENDMSG 2200 @!@!@
+@!@!@STARTMSG 2199:0 @!@!@
+73 states generated, 45 distinct states found, 0 states left on queue.
+@!@!@ENDMSG 2199 @!@!@
+@!@!@STARTMSG 2194:0 @!@!@
+The depth of the complete state graph search is 11.
+@!@!@ENDMSG 2194 @!@!@
+@!@!@STARTMSG 2268:0 @!@!@
+The average outdegree of the complete state graph is 1 (minimum is 0, the maximum 2 and the 95th percentile is 2).
+@!@!@ENDMSG 2268 @!@!@
+@!@!@STARTMSG 2186:0 @!@!@
+Finished in 3586ms at (2019-03-01 13:45:23)
+@!@!@ENDMSG 2186 @!@!@

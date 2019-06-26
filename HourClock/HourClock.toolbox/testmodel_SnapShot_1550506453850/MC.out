@@ -1,0 +1,655 @@
+@!@!@STARTMSG 2262:0 @!@!@
+TLC2 Version 2.13 of 18 July 2018
+@!@!@ENDMSG 2262 @!@!@
+@!@!@STARTMSG 2187:0 @!@!@
+Running breadth-first search Model-Checking with seed 2442450522579291046 with 2 workers on 4 cores with 601MB heap and 1347MB offheap memory (Windows 10 10.0 amd64, Oracle Corporation 1.8.0_201 x86_64).
+@!@!@ENDMSG 2187 @!@!@
+@!@!@STARTMSG 2220:0 @!@!@
+Starting SANY...
+@!@!@ENDMSG 2220 @!@!@
+Parsing file C:\Users\Naxxo\OneDrive\Programming workspace\TLA+\BookClockExample\HourClock.toolbox\testmodel\MC.tla
+Parsing file C:\Users\Naxxo\OneDrive\Programming workspace\TLA+\BookClockExample\HourClock.toolbox\testmodel\HourClock.tla
+Parsing file C:\Users\Naxxo\Downloads\TLAToolbox\toolbox\plugins\org.lamport.tlatools_1.0.0.201807180447\tla2sany\StandardModules\TLC.tla
+Parsing file C:\Users\Naxxo\Downloads\TLAToolbox\toolbox\plugins\org.lamport.tlatools_1.0.0.201807180447\tla2sany\StandardModules\Naturals.tla
+Parsing file C:\Users\Naxxo\Downloads\TLAToolbox\toolbox\plugins\org.lamport.tlatools_1.0.0.201807180447\tla2sany\StandardModules\Sequences.tla
+Parsing file C:\Users\Naxxo\Downloads\TLAToolbox\toolbox\plugins\org.lamport.tlatools_1.0.0.201807180447\tla2sany\StandardModules\FiniteSets.tla
+Semantic processing of module Naturals
+Semantic processing of module HourClock
+Semantic processing of module Sequences
+Semantic processing of module FiniteSets
+Semantic processing of module TLC
+Semantic processing of module MC
+@!@!@STARTMSG 2219:0 @!@!@
+SANY finished.
+@!@!@ENDMSG 2219 @!@!@
+@!@!@STARTMSG 2185:0 @!@!@
+Starting... (2019-02-18 17:14:10)
+@!@!@ENDMSG 2185 @!@!@
+@!@!@STARTMSG 2189:0 @!@!@
+Computing initial states...
+@!@!@ENDMSG 2189 @!@!@
+@!@!@STARTMSG 2269:0 @!@!@
+Computed 2 initial states...
+@!@!@ENDMSG 2269 @!@!@
+@!@!@STARTMSG 2269:0 @!@!@
+Computed 4 initial states...
+@!@!@ENDMSG 2269 @!@!@
+@!@!@STARTMSG 2269:0 @!@!@
+Computed 8 initial states...
+@!@!@ENDMSG 2269 @!@!@
+@!@!@STARTMSG 2190:0 @!@!@
+Finished computing initial states: 12 distinct states generated.
+@!@!@ENDMSG 2190 @!@!@
+@!@!@STARTMSG 2110:1 @!@!@
+Invariant inv_155050644955171000 is violated.
+@!@!@ENDMSG 2110 @!@!@
+@!@!@STARTMSG 2121:1 @!@!@
+The behavior up to this point is:
+@!@!@ENDMSG 2121 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+1: <Initial predicate>
+/\ hr = 5
+/\ alarm = 5
+/\ alarmActive = TRUE
+/\ tmp = 20
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+2: <Next line 31, col 9 to line 31, col 17 of module HourClock>
+/\ hr = 6
+/\ alarm = 5
+/\ alarmActive = TRUE
+/\ tmp = 20
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+3: <Next line 31, col 9 to line 31, col 17 of module HourClock>
+/\ hr = 7
+/\ alarm = 5
+/\ alarmActive = TRUE
+/\ tmp = 20
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+4: <Next line 31, col 9 to line 31, col 17 of module HourClock>
+/\ hr = 8
+/\ alarm = 5
+/\ alarmActive = TRUE
+/\ tmp = 20
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+5: <Next line 31, col 9 to line 31, col 17 of module HourClock>
+/\ hr = 9
+/\ alarm = 5
+/\ alarmActive = TRUE
+/\ tmp = 20
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+6: <Next line 31, col 9 to line 31, col 17 of module HourClock>
+/\ hr = 10
+/\ alarm = 5
+/\ alarmActive = TRUE
+/\ tmp = 20
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+7: <Next line 31, col 9 to line 31, col 17 of module HourClock>
+/\ hr = 11
+/\ alarm = 5
+/\ alarmActive = TRUE
+/\ tmp = 20
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+8: <Next line 31, col 9 to line 31, col 17 of module HourClock>
+/\ hr = 12
+/\ alarm = 5
+/\ alarmActive = TRUE
+/\ tmp = 21
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+9: <Next line 31, col 9 to line 31, col 17 of module HourClock>
+/\ hr = 1
+/\ alarm = 5
+/\ alarmActive = TRUE
+/\ tmp = 22
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+10: <Next line 31, col 9 to line 31, col 17 of module HourClock>
+/\ hr = 2
+/\ alarm = 5
+/\ alarmActive = TRUE
+/\ tmp = 22
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+11: <Next line 31, col 9 to line 31, col 17 of module HourClock>
+/\ hr = 3
+/\ alarm = 5
+/\ alarmActive = TRUE
+/\ tmp = 22
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+12: <Next line 31, col 9 to line 31, col 17 of module HourClock>
+/\ hr = 4
+/\ alarm = 5
+/\ alarmActive = TRUE
+/\ tmp = 22
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+13: <Next line 31, col 9 to line 31, col 17 of module HourClock>
+/\ hr = 5
+/\ alarm = 5
+/\ alarmActive = TRUE
+/\ tmp = 22
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+14: <Next line 31, col 9 to line 31, col 17 of module HourClock>
+/\ hr = 6
+/\ alarm = 5
+/\ alarmActive = TRUE
+/\ tmp = 22
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+15: <Next line 31, col 9 to line 31, col 17 of module HourClock>
+/\ hr = 7
+/\ alarm = 5
+/\ alarmActive = TRUE
+/\ tmp = 22
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+16: <Next line 31, col 9 to line 31, col 17 of module HourClock>
+/\ hr = 8
+/\ alarm = 5
+/\ alarmActive = TRUE
+/\ tmp = 22
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+17: <Next line 31, col 9 to line 31, col 17 of module HourClock>
+/\ hr = 9
+/\ alarm = 5
+/\ alarmActive = TRUE
+/\ tmp = 22
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+18: <Next line 31, col 9 to line 31, col 17 of module HourClock>
+/\ hr = 10
+/\ alarm = 5
+/\ alarmActive = TRUE
+/\ tmp = 22
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+19: <Next line 31, col 9 to line 31, col 17 of module HourClock>
+/\ hr = 11
+/\ alarm = 5
+/\ alarmActive = TRUE
+/\ tmp = 22
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+20: <Next line 31, col 9 to line 31, col 17 of module HourClock>
+/\ hr = 12
+/\ alarm = 5
+/\ alarmActive = TRUE
+/\ tmp = 23
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+21: <Next line 31, col 9 to line 31, col 17 of module HourClock>
+/\ hr = 1
+/\ alarm = 5
+/\ alarmActive = TRUE
+/\ tmp = 24
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+22: <Next line 31, col 9 to line 31, col 17 of module HourClock>
+/\ hr = 2
+/\ alarm = 5
+/\ alarmActive = TRUE
+/\ tmp = 24
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+23: <Next line 31, col 9 to line 31, col 17 of module HourClock>
+/\ hr = 3
+/\ alarm = 5
+/\ alarmActive = TRUE
+/\ tmp = 24
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+24: <Next line 31, col 9 to line 31, col 17 of module HourClock>
+/\ hr = 4
+/\ alarm = 5
+/\ alarmActive = TRUE
+/\ tmp = 24
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+25: <Next line 31, col 9 to line 31, col 17 of module HourClock>
+/\ hr = 5
+/\ alarm = 5
+/\ alarmActive = TRUE
+/\ tmp = 24
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+26: <Next line 31, col 9 to line 31, col 17 of module HourClock>
+/\ hr = 6
+/\ alarm = 5
+/\ alarmActive = TRUE
+/\ tmp = 24
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+27: <Next line 31, col 9 to line 31, col 17 of module HourClock>
+/\ hr = 7
+/\ alarm = 5
+/\ alarmActive = TRUE
+/\ tmp = 24
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+28: <Next line 31, col 9 to line 31, col 17 of module HourClock>
+/\ hr = 8
+/\ alarm = 5
+/\ alarmActive = TRUE
+/\ tmp = 24
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+29: <Next line 31, col 9 to line 31, col 17 of module HourClock>
+/\ hr = 9
+/\ alarm = 5
+/\ alarmActive = TRUE
+/\ tmp = 24
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+30: <Next line 31, col 9 to line 31, col 17 of module HourClock>
+/\ hr = 10
+/\ alarm = 5
+/\ alarmActive = TRUE
+/\ tmp = 24
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+31: <Next line 31, col 9 to line 31, col 17 of module HourClock>
+/\ hr = 11
+/\ alarm = 5
+/\ alarmActive = TRUE
+/\ tmp = 24
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+32: <Next line 31, col 9 to line 31, col 17 of module HourClock>
+/\ hr = 12
+/\ alarm = 5
+/\ alarmActive = TRUE
+/\ tmp = 25
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+33: <Next line 31, col 9 to line 31, col 17 of module HourClock>
+/\ hr = 1
+/\ alarm = 5
+/\ alarmActive = TRUE
+/\ tmp = 26
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+34: <Next line 31, col 9 to line 31, col 17 of module HourClock>
+/\ hr = 2
+/\ alarm = 5
+/\ alarmActive = TRUE
+/\ tmp = 26
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+35: <Next line 31, col 9 to line 31, col 17 of module HourClock>
+/\ hr = 3
+/\ alarm = 5
+/\ alarmActive = TRUE
+/\ tmp = 26
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+36: <Next line 31, col 9 to line 31, col 17 of module HourClock>
+/\ hr = 4
+/\ alarm = 5
+/\ alarmActive = TRUE
+/\ tmp = 26
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+37: <Next line 31, col 9 to line 31, col 17 of module HourClock>
+/\ hr = 5
+/\ alarm = 5
+/\ alarmActive = TRUE
+/\ tmp = 26
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+38: <Next line 31, col 9 to line 31, col 17 of module HourClock>
+/\ hr = 6
+/\ alarm = 5
+/\ alarmActive = TRUE
+/\ tmp = 26
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+39: <Next line 31, col 9 to line 31, col 17 of module HourClock>
+/\ hr = 7
+/\ alarm = 5
+/\ alarmActive = TRUE
+/\ tmp = 26
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+40: <Next line 31, col 9 to line 31, col 17 of module HourClock>
+/\ hr = 8
+/\ alarm = 5
+/\ alarmActive = TRUE
+/\ tmp = 26
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+41: <Next line 31, col 9 to line 31, col 17 of module HourClock>
+/\ hr = 9
+/\ alarm = 5
+/\ alarmActive = TRUE
+/\ tmp = 26
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+42: <Next line 31, col 9 to line 31, col 17 of module HourClock>
+/\ hr = 10
+/\ alarm = 5
+/\ alarmActive = TRUE
+/\ tmp = 26
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+43: <Next line 31, col 9 to line 31, col 17 of module HourClock>
+/\ hr = 11
+/\ alarm = 5
+/\ alarmActive = TRUE
+/\ tmp = 26
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+44: <Next line 31, col 9 to line 31, col 17 of module HourClock>
+/\ hr = 12
+/\ alarm = 5
+/\ alarmActive = TRUE
+/\ tmp = 27
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+45: <Next line 31, col 9 to line 31, col 17 of module HourClock>
+/\ hr = 1
+/\ alarm = 5
+/\ alarmActive = TRUE
+/\ tmp = 28
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+46: <Next line 31, col 9 to line 31, col 17 of module HourClock>
+/\ hr = 2
+/\ alarm = 5
+/\ alarmActive = TRUE
+/\ tmp = 28
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+47: <Next line 31, col 9 to line 31, col 17 of module HourClock>
+/\ hr = 3
+/\ alarm = 5
+/\ alarmActive = TRUE
+/\ tmp = 28
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+48: <Next line 31, col 9 to line 31, col 17 of module HourClock>
+/\ hr = 4
+/\ alarm = 5
+/\ alarmActive = TRUE
+/\ tmp = 28
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+49: <Next line 31, col 9 to line 31, col 17 of module HourClock>
+/\ hr = 5
+/\ alarm = 5
+/\ alarmActive = TRUE
+/\ tmp = 28
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+50: <Next line 31, col 9 to line 31, col 17 of module HourClock>
+/\ hr = 6
+/\ alarm = 5
+/\ alarmActive = TRUE
+/\ tmp = 28
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+51: <Next line 31, col 9 to line 31, col 17 of module HourClock>
+/\ hr = 7
+/\ alarm = 5
+/\ alarmActive = TRUE
+/\ tmp = 28
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+52: <Next line 31, col 9 to line 31, col 17 of module HourClock>
+/\ hr = 8
+/\ alarm = 5
+/\ alarmActive = TRUE
+/\ tmp = 28
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+53: <Next line 31, col 9 to line 31, col 17 of module HourClock>
+/\ hr = 9
+/\ alarm = 5
+/\ alarmActive = TRUE
+/\ tmp = 28
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+54: <Next line 31, col 9 to line 31, col 17 of module HourClock>
+/\ hr = 10
+/\ alarm = 5
+/\ alarmActive = TRUE
+/\ tmp = 28
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+55: <Next line 31, col 9 to line 31, col 17 of module HourClock>
+/\ hr = 11
+/\ alarm = 5
+/\ alarmActive = TRUE
+/\ tmp = 28
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+56: <Next line 31, col 9 to line 31, col 17 of module HourClock>
+/\ hr = 12
+/\ alarm = 5
+/\ alarmActive = TRUE
+/\ tmp = 29
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+57: <Next line 31, col 9 to line 31, col 17 of module HourClock>
+/\ hr = 1
+/\ alarm = 5
+/\ alarmActive = TRUE
+/\ tmp = 30
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+58: <Next line 31, col 9 to line 31, col 17 of module HourClock>
+/\ hr = 2
+/\ alarm = 5
+/\ alarmActive = TRUE
+/\ tmp = 30
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+59: <Next line 31, col 9 to line 31, col 17 of module HourClock>
+/\ hr = 3
+/\ alarm = 5
+/\ alarmActive = TRUE
+/\ tmp = 30
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+60: <Next line 31, col 9 to line 31, col 17 of module HourClock>
+/\ hr = 4
+/\ alarm = 5
+/\ alarmActive = TRUE
+/\ tmp = 30
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+61: <Next line 31, col 9 to line 31, col 17 of module HourClock>
+/\ hr = 5
+/\ alarm = 5
+/\ alarmActive = TRUE
+/\ tmp = 30
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+62: <Next line 31, col 9 to line 31, col 17 of module HourClock>
+/\ hr = 6
+/\ alarm = 5
+/\ alarmActive = TRUE
+/\ tmp = 30
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+63: <Next line 31, col 9 to line 31, col 17 of module HourClock>
+/\ hr = 7
+/\ alarm = 5
+/\ alarmActive = TRUE
+/\ tmp = 30
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+64: <Next line 31, col 9 to line 31, col 17 of module HourClock>
+/\ hr = 8
+/\ alarm = 5
+/\ alarmActive = TRUE
+/\ tmp = 30
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+65: <Next line 31, col 9 to line 31, col 17 of module HourClock>
+/\ hr = 9
+/\ alarm = 5
+/\ alarmActive = TRUE
+/\ tmp = 30
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+66: <Next line 31, col 9 to line 31, col 17 of module HourClock>
+/\ hr = 10
+/\ alarm = 5
+/\ alarmActive = TRUE
+/\ tmp = 30
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+67: <Next line 31, col 9 to line 31, col 17 of module HourClock>
+/\ hr = 11
+/\ alarm = 5
+/\ alarmActive = TRUE
+/\ tmp = 30
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+68: <Next line 31, col 9 to line 31, col 17 of module HourClock>
+/\ hr = 12
+/\ alarm = 5
+/\ alarmActive = TRUE
+/\ tmp = 31
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2201:0 @!@!@
+The coverage statistics at 2019-02-18 17:14:12
+@!@!@ENDMSG 2201 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 14, col 14 to line 14, col 48 of module HourClock: 166
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 15, col 14 to line 15, col 52 of module HourClock: 166
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 16, col 25 to line 16, col 29 of module HourClock: 166
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 16, col 32 to line 16, col 42 of module HourClock: 166
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 19, col 17 to line 19, col 55 of module HourClock: 0
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 22, col 15 to line 22, col 69 of module HourClock: 0
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 23, col 25 to line 23, col 29 of module HourClock: 0
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 26, col 18 to line 26, col 65 of module HourClock: 0
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 27, col 28 to line 27, col 38 of module HourClock: 0
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 31, col 14 to line 31, col 17 of module HourClock: 0
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 6, col 11 to line 6, col 12 of module HourClock: 89
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 6, col 15 to line 6, col 17 of module HourClock: 89
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 6, col 20 to line 6, col 24 of module HourClock: 89
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 6, col 27 to line 6, col 37 of module HourClock: 89
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2202:0 @!@!@
+End of statistics.
+@!@!@ENDMSG 2202 @!@!@
+@!@!@STARTMSG 2200:0 @!@!@
+Progress(68) at 2019-02-18 17:14:12: 269 states generated (8,743 s/min), 91 distinct states found (2,957 ds/min), 0 states left on queue.
+@!@!@ENDMSG 2200 @!@!@
+@!@!@STARTMSG 2199:0 @!@!@
+269 states generated, 91 distinct states found, 0 states left on queue.
+@!@!@ENDMSG 2199 @!@!@
+@!@!@STARTMSG 2194:0 @!@!@
+The depth of the complete state graph search is 68.
+@!@!@ENDMSG 2194 @!@!@
+@!@!@STARTMSG 2268:0 @!@!@
+The average outdegree of the complete state graph is 1 (minimum is 0, the maximum 1 and the 95th percentile is 1).
+@!@!@ENDMSG 2268 @!@!@
+@!@!@STARTMSG 2186:0 @!@!@
+Finished in 2556ms at (2019-02-18 17:14:12)
+@!@!@ENDMSG 2186 @!@!@

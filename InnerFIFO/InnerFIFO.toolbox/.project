@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<projectDescription>
+	<name>InnerFIFO</name>
+	<comment></comment>
+	<projects>
+	</projects>
+	<buildSpec>
+		<buildCommand>
+			<name>toolbox.builder.TLAParserBuilder</name>
+			<arguments>
+			</arguments>
+		</buildCommand>
+	</buildSpec>
+	<natures>
+		<nature>toolbox.natures.TLANature</nature>
+	</natures>
+	<linkedResources>
+		<link>
+			<name>BoundedFIFO.tla</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/BoundedFIFO.tla</locationURI>
+		</link>
+		<link>
+			<name>BoundedLIFO.tla</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/BoundedLIFO.tla</locationURI>
+		</link>
+		<link>
+			<name>Channel.tla</name>
+			<type>1</type>
+			<location>C:/Users/Naxxo/OneDrive/Programming workspace/TLA+/InnerFIFO/Channel.tla</location>
+		</link>
+		<link>
+			<name>FIFO.tla</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/FIFO.tla</locationURI>
+		</link>
+		<link>
+			<name>InnerFIFO.tla</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/InnerFIFO.tla</locationURI>
+		</link>
+		<link>
+			<name>InnerLIFO.tla</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/InnerLIFO.tla</locationURI>
+		</link>
+	</linkedResources>
+</projectDescription>

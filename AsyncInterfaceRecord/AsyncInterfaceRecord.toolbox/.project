@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<projectDescription>
+	<name>AsyncInterfaceRecord</name>
+	<comment></comment>
+	<projects>
+	</projects>
+	<buildSpec>
+		<buildCommand>
+			<name>toolbox.builder.TLAParserBuilder</name>
+			<arguments>
+			</arguments>
+		</buildCommand>
+	</buildSpec>
+	<natures>
+		<nature>toolbox.natures.TLANature</nature>
+	</natures>
+	<linkedResources>
+		<link>
+			<name>AsyncIn.tla</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/AsyncIn.tla</locationURI>
+		</link>
+		<link>
+			<name>AsyncInterfaceRecord.tla</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/AsyncInterfaceRecord.tla</locationURI>
+		</link>
+	</linkedResources>
+</projectDescription>
